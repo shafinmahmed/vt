@@ -1,4 +1,4 @@
-# [Shafin Ahmed](https://www.linkedin.com/in/shafinmahmed)
+# [Shafin Ahmed](https://www.linkedin.com/in/shafinahmed)
 ## How to run: 
 There are several ways to view the demo. This repo is being hosted **[here.](https://shafinmahmed.github.io/vention-test)** Alternatively, you can download the repo and host it locally with [VSCode Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 ## Notes:
