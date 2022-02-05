@@ -19,4 +19,4 @@ From the initial scene, Cube A starts from the left and Cube B starts from the r
 1. If Cube A collides with Cube B's purple face, the direction of travel is randomized.
 
 #### Remarks:
-Until I received the attachment in my email and opened to read it, I had never heard of three.js. It's been a fun 48 hours trying to figure out how to find my way around to figure out what I wanted to do. If you find my code to be dogshit, that's okay! I have the utmost confidence in my skills and my ability to achieve mastery at anything I want to - so I know I'll get better.
+Until I received the attachment in my email and opened to read it, I had never heard of three.js. It's been a fun 48 hours trying to figure out how to find my way around to figure out what I wanted to do. If you find my code to be dogshit, that's okay! I have absolute confidence in my skills and my ability to achieve mastery at anything I want to - so I know I'll get better.
