@@ -5,7 +5,7 @@ There are several ways to view the demo. This repo is being hosted **[here.](htt
 To run a new test, refresh your window (press F5). 
 ### Some assumptions:
 I was not super sure about a few requirements of the test so I made a few assumptions.  
-* Cube B always disappears after collision.
+* Cube B always disappears after collision. I can have it stay static after the collision or travel with Cube A as well if that was desired.
 * Since the boxes are initially set as travelling along a **1-D trajectory**, the random trajectory effect of colliding with Cube B's purple face is essentially a coin-toss which determines forward or reverse.
 
 #### Test Scenarios:
