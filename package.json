@@ -1,14 +1,14 @@
 {
   "name": "vention-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "Source for 3D Sim Dev test",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shafin Ahmed",
   "license": "ISC",
   "devDependencies": {
     "web": "^0.0.2",

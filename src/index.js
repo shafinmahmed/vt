@@ -84,10 +84,11 @@ function buildCubes() {
     let colors1 = [];
     let color1 = new THREE.Color();
 
+    // Here, I am painting the two triangles that sit on each face of the cube with same color to create the colored cube face.
     for (let i = 0; i < pos1.count; i += 3) {
         if (i == 0 | i == 3) {
             color1.set(colorList[0]);
-            face1 = colorList[0];               // Colliding face
+            face1 = colorList[0];               // colliding face cube A
         }
         else if (i == 6 | i == 9) {
             color1.set(colorList[1]); 
@@ -129,7 +130,7 @@ function buildCubes() {
         }
         else if (i == 6 | i == 9) {
             color2.set(colorList[1]);
-            face2 = colorList[1];                   // colliding face
+            face2 = colorList[1];                   // colliding face cube B
         }
         else if (i == 12 | i == 15) {
             color2.set(colorList[2]);
@@ -182,6 +183,7 @@ function travelCube() {
     // Post collision scenarios
     if (colStatus == true) {
         console.log(dir);
+        scene.remove(mesh2);
         switch (face2) {
             case face1:
                 scene.remove(mesh1);
