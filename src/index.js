@@ -210,8 +210,9 @@ function travelCube() {
                 }
                 break;
             case 0xffff00: //yellow
-                if (mesh1.position.x > -9.5) {
-                    mesh1.position.x -= (speed * 0.5);
+                if (mesh1.position.x < 9.5) {
+                    mesh1.position.x += (speed * 0.5);
+                    mesh2.position.x += (speed * 0.5);
                 }
                 break;
             case 0x800080: //purple                
