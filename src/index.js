@@ -5,7 +5,7 @@ let camera, controls, scene, renderer, light;
 let box1, matl1, mesh1;
 let box2, matl2, mesh2;
 let face1, face2;
-let colStatus, dir;
+let colStatus, dir1, dir2, randSpeed1, randSpeed2;
 
 init();
 
@@ -24,11 +24,19 @@ function createScene() {
     colStatus = false;
 
     if (Math.random() > 0.5) {
-        dir = 1;
+        dir1 = 1;
     }
     else {
-        dir = -1;
+        dir1 = -1;
     }
+    if (Math.random() > 0.5) {
+        dir2 = 1;
+    }
+    else {
+        dir2 = -1;
+    }
+    randSpeed1 = Math.random() * 0.2;
+    randSpeed2 = Math.random() * 0.2;
 
     scene = new THREE.Scene();
 
@@ -182,8 +190,6 @@ function travelCube() {
 
     // Post collision scenarios
     if (colStatus == true) {
-        console.log(dir);
-        scene.remove(mesh2);
         switch (face2) {
             case face1:
                 scene.remove(mesh1);
@@ -195,6 +201,7 @@ function travelCube() {
             case 0x00ff00: //green
                 if (mesh1.position.x < 9.5) {
                     mesh1.position.x += (speed * 2);
+                    mesh2.position.x += (speed * 2);
                 }
                 break;            
             case 0x0000ff: //blue
@@ -208,8 +215,9 @@ function travelCube() {
                 }
                 break;
             case 0x800080: //purple                
-                if (mesh1.position.x > -9.5 & mesh1.position.x < 9.5) {
-                    mesh1.position.x += (dir * speed);
+                if (mesh1.position.x > -9.5 & mesh1.position.x < 9.5 & mesh1.position.z > -9.5 & mesh1.position.z < 9.5) {
+                    mesh1.position.x += (dir1 * randSpeed1);
+                    mesh1.position.z += (dir2 * randSpeed2);
                 }
                 break;
             default:
