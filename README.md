@@ -14,7 +14,7 @@ From the initial scene, Cube A starts from the left and Cube B starts from the r
 1. If Cube A collides with Cube B's red face, it stops.
 1. If Cube A collides with Cube B's blue face, it reverses direction.
 1. If Cube A collides with Cube B's green face, it doubles its speed (same direction)
-1. If Cube A collides with Cube B's yellow face, it reverses direction and halves its speed.
+1. If Cube A collides with Cube B's yellow face, it halves its speed.
 1. If Cube A collides with Cube B's purple face, the direction of travel is randomized.
 
 #### Remarks:
